@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button android:id="@+id/get_int"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取int整数"
+    />
+    <TextView
+            android:id="@+id/set_int"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="=============================================="
+    />
+
+    <Button android:id="@+id/get_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取float浮点数"
+    />
+    <TextView
+            android:id="@+id/set_float"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="=============================================="
+    />
+
+    <Button android:id="@+id/get_char"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取char"
+    />
+    <TextView
+            android:id="@+id/set_char"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="=============================================="
+    />
+
+</LinearLayout>
