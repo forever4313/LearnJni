@@ -15,6 +15,14 @@ extern "C" {
 JNIEXPORT jstring JNICALL Java_com_kbeta_jni_learnjni_StringJniTest_getString
   (JNIEnv *, jclass);
 
+/*
+ * Class:     com_kbeta_jni_learnjni_StringJniTest
+ * Method:    accessField
+ * Signature: ()Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_com_kbeta_jni_learnjni_StringJniTest_accessField
+  (JNIEnv *, jobject);
+
 #ifdef __cplusplus
 }
 #endif

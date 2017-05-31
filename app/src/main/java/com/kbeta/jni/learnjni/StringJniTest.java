@@ -9,6 +9,9 @@ public class StringJniTest {
         System.loadLibrary("jniTestMain");   //defaultConfig.ndk.moduleName
     }
 
+    public String key = "leanJni";
     public native static String getString();
+
+    public native String accessField();
 
 }

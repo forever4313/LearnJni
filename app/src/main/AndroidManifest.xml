@@ -21,6 +21,9 @@
         <activity android:name=".StringTypeActivity">
 
         </activity>
+        <activity android:name=".ArrayTypeActivity">
+
+        </activity>
     </application>
 
 </manifest>

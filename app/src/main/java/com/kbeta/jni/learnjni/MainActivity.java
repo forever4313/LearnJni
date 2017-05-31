@@ -38,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent1 = new Intent(MainActivity.this,StringTypeActivity.class);
                         startActivity(intent1);
                         break;
+                    case 2:
+                        break;
+                    case 3:
+                        Intent intent3 = new Intent(MainActivity.this,ArrayTypeActivity.class);
+                        startActivity(intent3);
+                        break;
                 }
             }
         });
