@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
         titles.add("字符串操作");
         titles.add("对象操作");
         titles.add("数组操作");
-        titles.add("数组对象操作");
         return titles;
     }
 }
