@@ -23,6 +23,14 @@ JNIEXPORT jint JNICALL Java_com_kbeta_jni_learnjni_ArrayJniTest_getSumOfArray
 JNIEXPORT jobjectArray JNICALL Java_com_kbeta_jni_learnjni_ArrayJniTest_initInt2DArray
   (JNIEnv *, jclass, jint);
 
+/*
+ * Class:     com_kbeta_jni_learnjni_ArrayJniTest
+ * Method:    sortIntArray
+ * Signature: ([I)[I
+ */
+JNIEXPORT jintArray JNICALL Java_com_kbeta_jni_learnjni_ArrayJniTest_sortIntArray
+  (JNIEnv *, jclass, jintArray);
+
 #ifdef __cplusplus
 }
 #endif

@@ -11,8 +11,8 @@ import android.widget.TextView;
  * Created by Kevin Dong on 2017/5/26.
  */
 public class ArrayTypeActivity extends AppCompatActivity{
-    Button btnString,btnGenerateArr;
-    TextView tvString,tvGenerateArr;
+    Button btnString,btnGenerateArr,btnSortArr;
+    TextView tvString,tvGenerateArr,tvSortResl;
 
 
     @Override
@@ -22,9 +22,11 @@ public class ArrayTypeActivity extends AppCompatActivity{
 
         btnString = (Button) findViewById(R.id.get_arr_sum);
         btnGenerateArr = (Button) findViewById(R.id.generate_arr_btn);
+        btnSortArr = (Button) findViewById(R.id.sort_arr_btn);
+
         tvString = (TextView) findViewById(R.id.set_resl);
         tvGenerateArr = (TextView) findViewById(R.id.generate_arr_string);
-
+        tvSortResl = (TextView) findViewById(R.id.sort_arr_btn_resl);
 
         final int[] arr = {1,2,3,4,5,6,7,8};
         btnString.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +51,25 @@ public class ArrayTypeActivity extends AppCompatActivity{
                 }
                 rlt = rlt +"]";
                 tvGenerateArr.setText(rlt);
+            }
+        });
+
+        btnSortArr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int[] originArr = {8,2,1,3,9,10,1};
+                int[] sortResult = ArrayJniTest.sortIntArray(originArr);
+                String res = "[";
+                for(int i =0;i< sortResult.length;i++){
+                    if(i!=sortResult.length -1){
+                        res = res +sortResult[i]+",";
+                    }else{
+                        res = res + sortResult[i];
+                    }
+
+                }
+                res = res +"]";
+                tvSortResl.setText(res);
             }
         });
 

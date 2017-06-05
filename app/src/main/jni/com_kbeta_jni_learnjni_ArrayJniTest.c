@@ -55,3 +55,20 @@ JNIEXPORT jobjectArray JNICALL Java_com_kbeta_jni_learnjni_ArrayJniTest_initInt2
 
   }
 
+  int compare(int *a,int *b){
+        return (*a)- (*b);
+  }
+
+  JNIEXPORT jintArray JNICALL Java_com_kbeta_jni_learnjni_ArrayJniTest_sortIntArray
+    (JNIEnv *env, jclass jclss, jintArray jintArr){
+        // 获取数组
+        jint *elements = (*env)->GetIntArrayElements(env,jintArr,NULL);
+        //长度
+        int len = (*env)->GetArrayLength(env,jintArr);
+        //排序
+        qsort(elements,len,sizeof(jint),compare);
+        //同步
+        (*env)->ReleaseIntArrayElements(env,jintArr,elements,0);
+        return jintArr;
+    }
+

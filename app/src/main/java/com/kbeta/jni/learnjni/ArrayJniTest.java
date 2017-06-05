@@ -13,4 +13,6 @@ public class ArrayJniTest {
 
     public native static int[][]  initInt2DArray(int size);
 
+    public native static int[] sortIntArray(int[] arr);
+
 }

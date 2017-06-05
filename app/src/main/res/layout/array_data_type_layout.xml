@@ -36,5 +36,22 @@
     />
 
 
+    <Button android:id="@+id/sort_arr_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数组排序"
+    />
+    <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="原数组[8,2,1,3,9,10,1]"/>
+    <TextView
+            android:id="@+id/sort_arr_btn_resl"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="=============================================="
+    />
+
+
 
 </LinearLayout>
